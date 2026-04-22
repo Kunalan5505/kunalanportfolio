@@ -2,63 +2,273 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kunalan's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar glass">
-        <div class="logo">Kunalan</div>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#initiatives" class="nav-link">Initiatives</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Connect</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header class="hero glass">
-        <h1>Hello, I'm Kunalan</h1>
-        <p>Welcome to my portfolio!</p>
-    </header>
-
-    <section id="about" class="section glass">
-        <h2>About Me</h2>
-        <p>Brief bio goes here.</p>
-    </section>
-
-    <section id="projects" class="section glass">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <!-- Project cards go here -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">Passionate Developer | Innovative Thinker | Problem Solver</p>
+            <button class="cta-button">Explore My Work</button>
         </div>
     </section>
 
-    <section id="resume" class="section glass">
-        <h2>Resume</h2>
-        <a href="assets/resume.pdf" target="_blank" class="button glass">Download Resume</a>
-    </section>
-
-    <section id="contact" class="section glass">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="glass">Send</button>
-        </form>
-    </section>
-
-    <section id="blog" class="section glass">
-        <h2>Blog</h2>
-        <div class="blog-list">
-            <!-- Blog entries go here -->
+    <!-- Key Achievements Overview -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Achievements Overview</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card glass">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Award 1</h3>
+                    <p>Recognition for exceptional performance and innovation</p>
+                </div>
+                <div class="achievement-card glass">
+                    <div class="achievement-icon">⭐</div>
+                    <h3>Award 2</h3>
+                    <p>Excellence in project delivery and team collaboration</p>
+                </div>
+                <div class="achievement-card glass">
+                    <div class="achievement-icon">🎯</div>
+                    <h3>Award 3</h3>
+                    <p>Successful completion of high-impact projects</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="glass">
-        <p>&copy; 2026 Kunalan. All rights reserved.</p>
+    <!-- About Me -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content glass">
+                <p>I'm a dedicated professional with a passion for creating innovative solutions and driving meaningful impact. With expertise in web development, I focus on building scalable applications and delivering exceptional user experiences.</p>
+                <p>My journey has been marked by continuous learning, collaboration with talented teams, and a commitment to excellence in everything I do.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience & Key Achievements -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience & Key Achievements</h2>
+            <div class="experience-grid">
+                <div class="experience-card glass">
+                    <h3>Senior Developer</h3>
+                    <p class="company">Company Name | 2023 - Present</p>
+                    <ul class="achievement-list">
+                        <li>Led development of core features for web platform</li>
+                        <li>Improved application performance by 40%</li>
+                        <li>Mentored junior developers</li>
+                    </ul>
+                </div>
+                <div class="experience-card glass">
+                    <h3>Full Stack Developer</h3>
+                    <p class="company">Previous Company | 2021 - 2023</p>
+                    <ul class="achievement-list">
+                        <li>Developed responsive web applications</li>
+                        <li>Collaborated with cross-functional teams</li>
+                        <li>Implemented REST APIs</li>
+                    </ul>
+                </div>
+                <div class="experience-card glass">
+                    <h3>Junior Developer</h3>
+                    <p class="company">First Company | 2020 - 2021</p>
+                    <ul class="achievement-list">
+                        <li>Assisted in front-end development</li>
+                        <li>Learned best practices and coding standards</li>
+                        <li>Contributed to multiple projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Initiatives -->
+    <section id="initiatives" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Initiatives</h2>
+            <div class="initiatives-grid">
+                <div class="initiative-card glass">
+                    <h3>Initiative 1: Platform Optimization</h3>
+                    <p>Spearheaded a comprehensive optimization project that reduced load times and improved user engagement by 35%.</p>
+                </div>
+                <div class="initiative-card glass">
+                    <h3>Initiative 2: Team Development Program</h3>
+                    <p>Created and led a mentorship program to enhance team skills and knowledge sharing across departments.</p>
+                </div>
+                <div class="initiative-card glass">
+                    <h3>Initiative 3: Innovation Lab</h3>
+                    <p>Established an innovation lab to explore emerging technologies and develop cutting-edge solutions.</p>
+                </div>
+                <div class="initiative-card glass">
+                    <h3>Initiative 4: Quality Assurance</h3>
+                    <p>Implemented automated testing frameworks that increased code quality and reduced bug reports by 50%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card glass">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p class="institution">University Name</p>
+                    <p class="year">Graduated: 2020</p>
+                    <p>GPA: 3.8/4.0</p>
+                </div>
+                <div class="education-card glass">
+                    <h3>Diploma in Information Technology</h3>
+                    <p class="institution">College Name</p>
+                    <p class="year">Completed: 2018</p>
+                    <p>Honors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Professional Development -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications & Professional Development</h2>
+            <div class="certifications-grid">
+                <div class="cert-card glass">
+                    <h3>AWS Solutions Architect</h3>
+                    <p class="issuer">Amazon Web Services</p>
+                    <p class="date">Certified: 2023</p>
+                </div>
+                <div class="cert-card glass">
+                    <h3>Google Cloud Professional Developer</h3>
+                    <p class="issuer">Google Cloud</p>
+                    <p class="date">Certified: 2023</p>
+                </div>
+                <div class="cert-card glass">
+                    <h3>Advanced JavaScript Developer</h3>
+                    <p class="issuer">Udemy</p>
+                    <p class="date">Completed: 2022</p>
+                </div>
+                <div class="cert-card glass">
+                    <h3>Scrum Master Certification</h3>
+                    <p class="issuer">Scrum Alliance</p>
+                    <p class="date">Certified: 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let's Connect -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content glass">
+                <p class="contact-intro">I'm always interested in hearing about new projects and opportunities.</p>
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <span class="icon">📧</span>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+                        <span class="icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/yourprofile" class="contact-link" target="_blank">
+                        <span class="icon">🐙</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://twitter.com/yourprofile" class="contact-link" target="_blank">
+                        <span class="icon">🐦</span>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
